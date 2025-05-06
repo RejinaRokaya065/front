@@ -11,12 +11,17 @@
     <p id="demo"> </p>
     <button type="button" onclick="changeText()">Click Me</button>
     <p id="demo1">Hello</p>
+
     <script>
         const user="Rejina";
         function changeText(){
             document.getElementById("demo1").innerHTML="You Click The Button";
         }
 
+        function changeText(){
+        document.getElementById("demo1").innerHTML="You Click The Button";
+        }  
+  
         function viewDate(){
         document.getElementById("demo").innerHTML=
         "Hi " + user + " today is " + Date();
