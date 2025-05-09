@@ -37,7 +37,7 @@ const projects=[
     {
         image:"image/Car.jpg",
         title:"Animated Navbar",
-        description:"A responsive navigation bar with",
+        description:"A responsible navigation bar  smooth animations.",
     },
     {
         image:"image/Car.jpg",
@@ -47,9 +47,9 @@ const projects=[
     {
         image:"image/Car.jpg",
         title:"Animated Navbar",
-        description:"A responsive navigation bar with",
+        description:"A responsible navigation bar  smooth animations.",
     },
-]
+];
 
 const container=document.getElementById("project-container");
 
@@ -62,4 +62,34 @@ projects.forEach(project=>{
     <p>${project.description}</p>
     `;
     container.appendChild(card);
-});
+}
+);
+const service= [
+    {
+      image: "image/honda.jpg",
+      title: "Service 1",
+      description: "Building responsive and user-friendly websites using modern technologies.",
+   
+    },
+    {
+      image: "image/honda.jpg",
+      title: "Service 2",
+      description: "Creating mobile applications that provide a seamless user experience.",
+    
+    },
+    
+  ];
+  const services = document.getElementById("service-container");
+  services.forEach(service => { 
+    const card = document.createElement("div");
+    card.className="ser";
+  
+    card.innerHTML = `
+      <img src="${service.image}" alt="${service.title}">
+     
+      <h3>${service.title}</h3>
+      <p>${service.description}</p>
+    `;
+    services.appendChild(card);
+  }
+  );

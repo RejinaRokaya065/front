@@ -326,11 +326,10 @@ margin: 100px;
 }
 
 .card{
-
-width: 200px;
 overflow: hidden;
 position:relative;
 border-radius: 10px;
+width: 250px;
 }
 .card:hover{
   background-color:#555;
@@ -339,21 +338,21 @@ border-radius: 10px;
   }
 
 .card img{
-width: 100%;
+width: 60%;
 height: 180px;
 object-fit: cover;
-display: block;
 margin: 5%;
 justify-content: space-between;
 transition: all 3.0s ease;
 }
-.cardr:hover img{
+.card:hover img{
 scale: 1.1;
 }
 .project-container{
   align-items: center;
   display: flex;
-  gap: 30px;
+  flex-wrap: wrap;
+  gap: 20px;
 }
 
 .lay{
@@ -366,6 +365,10 @@ scale: 1.1;
   .ser{
   text-align: center;
   margin: 100px;
+  overflow: hidden;
+position:relative;
+border-radius: 10px;
+width: 250px;
   
   }
   .service{
@@ -373,16 +376,21 @@ scale: 1.1;
   overflow: hidden;
   border-radius: 10px;
   }
-  .service img{
+  .ser img{
     width: 60%;
     height: 145px;
+object-fit: cover;
+margin: 5%;
+justify-content: space-between;
+transition: all 3.0s ease;
   }
-  .service:hover{
+  .ser:hover{
     background-color:#555;
     cursor: pointer;
-  
     }
-
+    .ser:hover img{
+      scale: 1.1;
+      }
 .intro{
 text-align: center;
 padding: 25%;
