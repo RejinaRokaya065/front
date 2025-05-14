@@ -1,0 +1,1 @@
+const height = document.getElementById("height").value          
